@@ -1,0 +1,31 @@
+name: Directory
+on:
+  pull_request:
+    paths: ["orgs/**", "build.py"]
+  push:
+    branches: [main]
+    paths: ["orgs/**", "build.py"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  check:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the organisation files
+        run: python3 build.py --check
+  update:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    concurrency: update-main
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update index.html
+        run: |
+          python3 build.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet || { git commit -m "Update index.html"; git pull --rebase origin main; git push; }
