@@ -1,18 +1,48 @@
 {
   "name": "LimeChain",
   "kind": "Dev studio",
-  "typeDetail": "Dev studio",
+  "typeDetail": "Blockchain consulting & engineering (est. 2017)",
   "region": "Europe",
-  "regionDetail": "Europe",
-  "segments": [],
-  "tier": "Active",
-  "status": "Not engaged in sheet",
-  "roles": "Community Tech Partner Program member (answers forum developer questions); dedicated Canton development services",
-  "strengths": "Daml engineering, RWA tokenization, institutional dApps",
-  "credibility": "Long-standing Web3 engineering firm",
-  "openQuestions": "Any client builds to add?; Validate delivery for large financial institutions before tagging Institutional",
-  "sources": [
-    "https://limechain.tech/canton-network-development-services"
+  "regionDetail": "Europe-based; Geography-agnostic delivery",
+  "segments": [
+    "Institutional",
+    "Infrastructure & nodes",
+    "DeFi & retail"
   ],
-  "projects": []
+  "segmentBasis": "Receivables tokenisation POC for a specialist factoring provider; MainNet validator; DeFi lending contracts and backend automation",
+  "tier": "Active",
+  "status": "Tokenization development, Factoring platform development in progress, regular CIP participant",
+  "demos": [
+    "Receivables tokenisation & factoring",
+    "Daml developer tooling & education (FRED)",
+    "Daml test output & Studio tooling (proposal in preparation)"
+  ],
+  "roles": "Community Tech Partner (forum developer guidance); MainNet validator; Dev Fund applicant (FRED: Daml Development Reload, with Digital Asset; Daml tooling proposal in preparation); engineers in the Token Standards / Asset Standards, Daml Language & Developer Tooling, and DAR Package Management & App Lifecycle SIGs; dedicated Canton development services",
+  "firstActivity": "Apr 2026 (validator-operator application published)",
+  "strengths": "Use-case discovery & architecture, Daml application and asset-lifecycle design, financial-system and identity-attestation integration, protocol / SDK / developer tooling",
+  "credibility": "Engineering since 2017 across digital debt and credit platforms, institutional apps, DeFi lending and consumer tokens; accepted upstream SDK contributions, published smart-contract debugging and subgraph unit-testing tools, EVM-compatibility standards",
+  "sources": [
+    "https://limechain.tech/canton-network-development-services",
+    "https://github.com/canton-foundation/canton-dev-fund/pull/937",
+    "https://github.com/canton-foundation/canton-dev-fund/pull/870"
+  ],
+  "projects": [
+    {
+      "name": "Receivables tokenisation & factoring POC",
+      "stage": "Delivered demo / POC",
+      "description": "On-chain shadow system for a specialist factoring provider, reconciling invoice lifecycle with operational records across Canton and two other chains"
+    },
+    {
+      "name": "FRED: Daml Development Reload",
+      "stage": "Local / Designed",
+      "timeline": "Oct 2026",
+      "description": "Dev Fund proposal (Developer Experience, Tooling & Education RFP), co-delivered with Digital Asset; proposal under review"
+    },
+    {
+      "name": "Daml test output, diagnostics & Studio workflow",
+      "stage": "Local / Designed",
+      "timeline": "Q4 2026",
+      "description": "Dev Fund proposal in preparation (RFP 19/18): JSON output for dpm test, readable diagnostics, Studio build/test controls; from LimeChain's Daml IDE gaps review"
+    }
+  ]
 }
